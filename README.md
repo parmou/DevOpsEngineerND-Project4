@@ -29,14 +29,29 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Run `make install` to install the necessary dependencies
 
 ### Running `app.py`
+`app.py` is the web application file built using flask
 
-1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
+1. To run in Standalone:  `python app.py`
+
+Script to run the flask app on docker
+2. To run in Docker:  `./run_docker.sh`
+
+Script to run the flask app on K8s
+3. To run in Kubernetes:  `./run_kubernetes.sh`
+
+###Verification
+Run 'make_prediction.sh' to check the output of the webapp
 
 ### Kubernetes Steps
 
 * Setup and Configure Docker locally
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
+* start minikube cluster
 * Run via kubectl
+
+###K8 clean up
+`kubectl delete pods udacity-microservice-p4`
+`kubectl delete service udacity-microservice-p4`
+`minikube delete`
+
