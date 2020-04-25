@@ -39,7 +39,7 @@ Script to run the flask app on docker
 Script to run the flask app on K8s
 3. To run in Kubernetes:  `./run_kubernetes.sh`
 
-###Verification
+### Verification
 Run 'make_prediction.sh' to check the output of the webapp
 
 ### Kubernetes Steps
@@ -50,8 +50,11 @@ Run 'make_prediction.sh' to check the output of the webapp
 * start minikube cluster
 * Run via kubectl
 
-###K8 clean up
+### K8 clean up
+
 `kubectl delete pods udacity-microservice-p4`
+
 `kubectl delete service udacity-microservice-p4`
+
 `minikube delete`
 
