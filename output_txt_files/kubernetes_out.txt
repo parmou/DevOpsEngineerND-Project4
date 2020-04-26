@@ -1,4 +1,14 @@
+(.devops) mourya@mourya-Inspiron-3542:~/Workspace/DevOpsND/DevOpsND-P4$ bash run_kubernetes.sh 
+pod/udacity-microservice-p4 created
+NAME                      READY   STATUS    RESTARTS   AGE
+udacity-microservice-p4   0/1     Pending   0          1s
+error: unable to forward port because pod is not running. Current status=Pending
+
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+
+#output for ./make_prediction.sh 
+Port: 8000
+{"prediction":[20.35373177134412]}
 
